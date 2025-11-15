@@ -1,0 +1,520 @@
+/* Start Variables */
+:root, [data-bs-theme=light] {
+    --bs-black: #000;
+    --bs-white: #fff;
+    --bs-slate-gray: #54585A;
+    --bs-primary: #c8102e;
+    --bs-secondary: #F2F2F2; /* Light Gray */
+    --bs-secondary-hover: #D5D5D5;
+    --bs-info: #FFF9D9; /* Cream */
+    --bs-light: #f8f9fa;
+    --bs-dark: #960C22;
+    --bs-primary-rgb: 200, 16, 46;
+    --bs-secondary-rgb: 242, 242, 242;
+    --bs-success-rgb: 25, 135, 84;
+    --bs-info-rgb: 255, 249, 217; 
+    --bs-light-rgb: 248, 249, 250;
+    --bs-dark-rgb: 150, 12, 34;
+    --bs-slate-gray-rgb: 84, 88, 90;
+    --bs-primary-bg-subtle: #cfe2ff;
+    --bs-secondary-bg-subtle: #e2e3e5;
+    --bs-success-bg-subtle: #d1e7dd;
+	--bs-font-heading: "League Gothic", sans-serif;
+}
+/* End Variables */
+/* Start Type */
+.ff-heading { font-family: var(--bs-font-heading);}
+/* End Type */
+
+/* Start Utilities */
+.w-fit { width: fit-content; }
+.paragraph-line-length { max-width: 80ch; }
+/* Custom utility class for width: fit-content on sm breakpoint and up */
+@media (min-width: 576px) {
+	.w-sm-fit {
+		width: fit-content !important;
+	}
+}
+/* Custom utility class for width: fit-content on xl breakpoint and up */
+@media (min-width: 1200px) {
+	.w-xl-fit {
+		width: fit-content !important;
+	}
+}
+/* End Utilities */
+/* Start Backgrounds */
+.bg-slate-gray {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-slate-gray-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.page-section theme-light-gray { background-color: var(--bs-secondary);}
+
+[class^="bg-image"] {
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+/* End Backgrounds */
+
+/* Start Sections */
+.container-text {
+    width: 100%;
+    max-width: 740px;
+	padding-right: 1.25rem;
+    padding-left: 1.25rem;
+}
+
+@media screen and (min-width: 768px) {
+  .container-text {
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container-text {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+.text-white a:not(.btn) {
+	color: var(--bs-white);
+	text-decoration: underline;
+}
+.text-white a:not(.btn):hover,
+.text-white a:not(.btn):focus {
+	color: var(--bs-secondary);
+	text-decoration: none;
+}
+/* End Sections */
+
+/* Start Layouts */
+.d-grid { display: grid; }
+
+.grid-col-1 { grid-template-columns: 1fr; }
+.grid-col-2 { grid-template-columns: repeat(2, 1fr); }
+.grid-col-3 { grid-template-columns: repeat(3, 1fr); }
+.grid-col-4 { grid-template-columns: repeat(4, 1fr); }
+
+@media (min-width: 768px) { 
+    .grid-col-md-2 { grid-template-columns: repeat(2, 1fr); }
+    .grid-col-md-3 { grid-template-columns: repeat(3, 1fr); }
+    .grid-col-md-4 { grid-template-columns: repeat(4, 1fr); }
+}
+
+@media (min-width: 992px) {
+    .grid-col-lg-2 { grid-template-columns: repeat(2, 1fr); }
+    .grid-col-lg-3 { grid-template-columns: repeat(3, 1fr); }
+    .grid-col-lg-4 { grid-template-columns: repeat(4, 1fr); }
+    .grid-col-lg-5 { grid-template-columns: repeat(5, 1fr); }
+    .grid-col-lg-6 { grid-template-columns: repeat(6, 1fr); }
+}
+
+@media (min-width: 1200px) {
+    .grid-col-xl-2 { grid-template-columns: repeat(2, 1fr); }
+    .grid-col-xl-3 { grid-template-columns: repeat(3, 1fr); }
+    .grid-col-xl-4 { grid-template-columns: repeat(4, 1fr); }
+    .grid-col-xl-5 { grid-template-columns: repeat(5, 1fr); }
+    .grid-col-xl-6 { grid-template-columns: repeat(6, 1fr); }
+}
+/* End Layouts */
+
+/* Start Buttons */
+/* Button Colors */
+.btn-primary { 
+    --bs-btn-border-color: var(--bs-primary);
+} 
+
+.btn-snippet {
+    display: flex;
+    padding: .75rem 1.25rem;
+    border-radius: 2rem;
+    border: 1px;
+    font-weight: 600;
+	align-items: center;
+	justify-content: space-between;
+	text-align: left;
+}
+
+.btn-snippet.btn-secondary {
+    background-color:  var(--bs-secondary);
+    border-color:  var(--bs-secondary);
+    color: var(--bs-black);
+}
+
+    .btn-snippet.btn-secondary:hover, .btn-snippet.btn-secondary:focus, .btn-snippet.btn-secondary:focus-visible {
+        background-color:  var(--bs-secondary-hover);
+        border-color:  var(--bs-secondary-hover);
+        color: var(--bs-black);
+    }
+
+.btn-snippet.btn-light {
+    background-color: var(--bs-white);
+	color: var(--bs-primary);
+}
+    .btn-snippet.btn-light:hover, .btn-snippet.btn-light:focus, .btn-snippet.btn-light:focus-visible {
+        background-color: var(--bs-gray-100);
+		color: var(--bs-dark);
+    }
+
+.btn-snippet.btn-link:active {
+    color: var(--bs-dark);
+}
+
+/* Button Outline on Focus */
+.btn-snippet:focus, .btn-snippet:focus-visible {
+    outline: 2px var(--bs-black) solid;
+    box-shadow: none;
+}
+
+/* Button & Card-People Link Icons */
+a .btn-i-hoverFocus { display: none; }
+    
+    a:hover .btn-i-hoverFocus, a:focus .btn-i-hoverFocus, a:focus-visible .btn-i-hoverFocus { 
+        display: inline-block;
+    }
+
+    a:hover .btn-i-default, a:focus .btn-i-default, a:focus-visible .btn-i-default  {
+        display: none;
+    }
+
+.btn-snippet i {
+    -webkit-text-stroke: .5px;
+    padding-left: .5rem;
+    transition: opacity 0.4s ease, right 0.4s ease; /* Transition for icon appearance */
+}
+
+.btn-snippet i.btn-i-left {
+    padding-left: 0;
+    padding-right: .5rem;
+}
+
+.btn-link.btn-snippet:hover, .btn-link.btn-snippet:focus, .btn-link.btn-snippet:focus-visible {
+    text-decoration: none;
+}
+
+/* End Buttons */
+/* General Card */
+/* Sizing */
+.clamp-4-lines {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 1.5rem;
+    min-height: calc(1.5rem * 4); /* = 6rem for 4 lines */
+
+    /* prevent long words from breaking layout */
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+/* horizontal card styling */
+.card-snippet-horizontal {
+    border-radius: 4px; /* bootstrap card class default round value */
+    outline: 1px solid var(--bs-gray); /* no need for additional class since gray CSS will override it */
+    color: black;
+}
+.card-snippet-horizontal img {
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    border-bottom-right-radius: 0;
+}
+.card-snippet-gray {
+    border: none;
+    outline: none;
+    background-color: var(--bs-secondary);
+	overflow: hidden;
+}
+.card-snippet-white {
+    background-color: var(--bs-white);
+}
+/*Gets rid of border rounding on left hand corner of horizontal card image when aligned vertically*/
+@media (max-width: 767.98px) {
+    .card-snippet-horizontal img {
+        border-bottom-left-radius: 0px;
+    }
+}
+.card-snippet-tag {
+    color: var(--bs-gray);
+}
+/* Add | after every tag except last one */
+.card-tags .card-snippet-tag:not(:last-child)::after {
+	content: " |\a0"; /*a0 represents blank space*/
+}
+
+/* Hover and Focus Class */
+.card-hover:hover,
+a.card-focus-state:focus,
+a.card-focus-state:focus-visible {
+    outline: 3px solid var(--bs-black);
+    border-radius: 4px;
+}		
+/* End General Card*/
+
+/* People Card */
+/* Default image size (100px x 100px for all screen sizes by default) */
+.s-100x100 {
+    width: 100px;
+    height: 100px;
+    object-fit: cover; /* Ensures the image takes up entire circle regardless of its aspect ratio */
+	flex-shrink: 0;
+}
+
+/* Gradually scale size to 150px for medium devices and higher */
+@media (min-width: 768px) {
+    .s-md-150x150 {
+        width: calc(100px + (150 - 100) * ((100vw - 768px) / (1200 - 768))); 
+        height: calc(100px + (150 - 100) * ((100vw - 768px) / (1200 - 768)));
+        /* Ensure image does not exceed 150px in width and height*/
+        max-width: 150px; 
+        max-height: 150px; 
+    }
+}
+.snippet-pplCard a { 
+    text-decoration: underline;
+}
+
+.snippet-pplCard a:hover, .snippet-pplCard a:focus, .snippet-pplCard a:focus-visible { 
+    text-decoration: none;
+}
+/* End People Card */
+
+/*Pills Custom CSS*/
+	.pill-wrapper ol {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem;
+		padding-left: 0; 
+		list-style: none;
+	}
+	.pill-wrapper a {
+		background-color: var(--bs-secondary);
+		color: var(--bs-black);
+		border-radius: 50rem;
+		padding: 0.25rem 1.4rem;
+		text-decoration: none;
+		display: inline-block;
+	}
+	.pill-wrapper a:hover,
+	.pill-wrapper a:focus,
+	.pill-wrapper a:focus-visible {
+		background-color: var(--bs-secondary-hover);
+		outline: 3px solid var(--bs-black);
+	}
+/* End Pills Custom CSS */
+
+/* start video card snippet */
+	.snippet-video-play-button i.bi-play-fill {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-size: 3.25rem;
+		color: var(--bs-secondary);
+		opacity: 0.8;
+	}
+	/* dark overlay over image */
+	.snippet-video-play-button img {
+		filter: brightness(50%);
+	}
+/* end video card snippet */
+
+/* Start CTA card snippet */
+.cta-paragraph {
+	margin-top: 0; 
+}
+
+.cta-paragraph:first-of-type { /* only first paragraph will have a mt-2 */
+	margin-top: 0.5rem;
+}
+
+.cta-paragraph:last-of-type { /* only last paragraph (before button) will have a mb-2 */
+	margin-bottom: 0.5rem;
+}
+/* End CTA Card Snippet */
+
+/* Start stats feature snippet */
+	.stats-image {
+		max-height: 500px;
+		border-radius: 8px;
+		aspect-ratio: 350/220;
+		background-size: cover !important;
+		margin-top: 1.5rem;
+	}
+/* STATS LIST STYLING - base */
+	.stats-list {
+		display: flex;
+		padding: 0;
+		list-style: none;
+		flex-direction: column;
+		text-align: center;
+		row-gap: 20px;
+	}
+	.stats-list li {
+		background-color: #f5f5f5;
+		border-radius: 8px;
+		padding: 20px;
+		flex-direction: column;
+		justify-content: center;
+		width: 100%;
+		overflow-wrap: break-word;
+		color: #000;
+	}
+/* === INTERIOR TEMPLATE MEDIA QUERIES === */
+	.interior-template {
+		/* Medium and up */
+		@media (min-width: 768px) {
+			.stats-list {
+				flex-direction: row;
+				column-gap: 40px;
+				order: 2;
+				overflow: hidden;
+			}
+
+			.stats-list li {
+				flex: 1 1 0;
+				min-width: 0;
+			}
+
+			.stats-description {
+				max-width: 700px;
+				order: 3;
+			}
+
+			.stats-btn {
+				order: 4;
+			}
+
+			.stats-margin-left-align,
+			.stats-margin-right-align {
+				margin-inline-start: 3rem;
+			}
+		}
+
+		/* Large and up */
+		@media (min-width: 1450px) { 
+			.stats-list {
+				flex-direction: column;
+				justify-content: center;
+				row-gap: 0px;
+				width: 100%;
+				max-width: 350px;
+				position: absolute;
+				background-color: #FFF;
+				border-left: 1px solid var(--bs-gray);
+				border-right: 1px solid var(--bs-gray);
+				margin: 10px 0 0 0;						
+				min-height: 540px;
+			}
+
+			.stats-list li:not(:last-child)::after {
+				content: "";
+				display: block;
+				height: 1px;
+				background-color: var(--bs-gray);
+				margin: 1rem auto;
+				width: 80%;
+			}
+
+			.stats-list li {
+				background-color: #FFF;
+			}
+
+			.stats-description {
+				margin-top: 7rem;
+				max-width: 500px;
+			}
+
+			.stats-list-left-align {
+				right: 110px;
+				left: auto;
+			}
+
+			.stats-list-right-align {
+				left: 110px;
+				right: auto;
+			}
+
+			.stats-margin-right-align {
+				margin-left: 350px;
+			}
+		}
+	}
+/* === LANDING TEMPLATE MEDIA QUERIES === */
+    .landing-template {
+        /* Medium and up */
+        @media (min-width: 768px) {
+            .stats-list {
+                flex-direction: row;
+                column-gap: 40px;
+                order: 2;
+            }
+
+            .stats-description {
+                max-width: 700px;
+                order: 3;
+            }
+
+            .stats-btn {
+                order: 4;
+            }
+
+            .stats-margin-left-align,
+            .stats-margin-right-align {
+                margin-inline-start: 3rem;
+            }
+        }
+
+        /* Large and up */
+        @media (min-width: 992px) {
+            .stats-list {
+                flex-direction: column;
+                justify-content: center;
+                row-gap: 0px;
+                width: 100%;
+                max-width: 350px;
+                position: absolute;
+                background-color: #FFF;
+                border-left: 1px solid var(--bs-gray);
+                border-right: 1px solid var(--bs-gray);
+                min-height: 540px;
+                margin: 10px 0 0 0;
+            }
+
+            .stats-list li:not(:last-child)::after {
+                content: "";
+                display: block;
+                height: 1px;
+                background-color: var(--bs-gray);
+                margin: 1rem auto;
+                width: 80%;
+            }
+
+            .stats-list li {
+                background-color: #FFF;
+            }
+
+            .stats-description {
+                margin-top: 3rem;
+                max-width: 500px;
+            }
+
+            .stats-list-left-align {
+                right: 110px;
+                left: auto;
+            }
+
+            .stats-list-right-align {
+                left: 110px;
+                right: auto;
+            }
+
+            .stats-margin-right-align {
+                margin-left: 500px;
+            }
+        }
+    }

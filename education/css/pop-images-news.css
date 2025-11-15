@@ -1,0 +1,23 @@
+/***********************************************************************
+	Official COE wide page stylesheet.  
+	This stylesheet is imported into official UH template stylesheets.
+	It is not intended to be directly referenced by HTML pages.  
+	Created: Oct 2014, by the University Marketing.  
+
+
+ CONTENTS: 
+	
+ 	CLASSES
+	---------
+
+	
+/************************************************************************/
+
+/* Scale Section */
+#news-features img  {
+transition: all .2s ease-in-out;
+}
+
+#news-features img:hover {
+transform: scale(1.05);
+}

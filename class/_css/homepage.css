@@ -1,0 +1,263 @@
+@charset "UTF-8";
+/* CSS Document */
+/*================= Event section ==================*/
+ .grid-date-wrapper {
+	 color: #fff9d9;
+	 font: .875rem 'Milo', sans-serif;
+	 line-height: 1;
+	 margin-left: -1rem;
+	 margin-top: 1rem;
+	 position: absolute;
+	 text-align: center;
+	 transition: color .25s ease;
+	 z-index: auto;
+}
+ .grid-date-wrapper::before {
+	 background: #961A24;
+	 bottom: -.5rem;
+	 content: '';
+	 height: 100%;
+	 left: 0;
+	 position: absolute;
+	 width: 1rem;
+	 -webkit-transform: skewY(45deg);
+	 transform: skewY(45deg);
+}
+ .grid-date {
+	 background: #C8202E;
+	 min-width: 4.5em;
+	 padding: .5em .5em .5em 1em;
+	 position: relative;
+	 z-index: 1;
+	/* -webkit-transform: perspective(0) translate3d(0, 0, 16px);
+	 */
+	/*transform: perspective(0) translate3d(0, 0, 16px);
+	*/
+}
+ .grid-date::before {
+	 top: 0;
+	 -webkit-transform: skewX(-16deg);
+	 transform: skewX(-16deg);
+}
+ .grid-date::before, .grid-date::after {
+	 background: #C8202E;
+	 content: '';
+	 height: 50%;
+	 margin: 0;
+	 position: absolute;
+	 right: -10%;
+	 width: 100%;
+	 z-index: -1;
+}
+ .grid-date::after {
+	 bottom: 0;
+	 -webkit-transform: skewX(16deg);
+	 transform: skewX(16deg);
+}
+ .grid-date::before, .grid-date::after {
+	 background: #C8202E;
+	 content: '';
+	 height: 50%;
+	 margin: 0;
+	 position: absolute;
+	 right: -10%;
+	 width: 100%;
+	 z-index: -1;
+}
+ .grid-image-wrapper {
+	 overflow: visible;
+	 position: relative;
+	 z-index: auto;
+}
+ .grid-image {
+	 transition: transform 0.25s ease;
+	 -webkit-transform: perspective(1000px) translate3d(0, 0, 0);
+	 transform: perspective(1000px) translate3d(0, 0, 0);
+}
+ .grid-anchor:hover .grid-image {
+	 -webkit-transform: perspective(700px) translate3d(0, 0, 15px);
+	 transform: perspective(700px) translate3d(0, 0, 15px);
+	 box-shadow: 0px 0px 15px #888888;
+}
+ .grid-date span {
+	 display: block;
+}
+ .grid-date .day {
+	 font-size: 2em;
+	 font-weight: bold;
+}
+ /*h3 {
+	 color: #252525;
+	 font-family: "Milo", sans-serif;
+	 font-size: 1.5em;
+	 font-weight: 100;
+	 letter-spacing: 0;
+	 line-height: 0.95em !important;
+	 margin: 25px 0 5px 14px;
+	 padding: 0;
+	 text-transform: uppercase;
+}*/
+ #event, #news, #intro-video {
+	 background: #fffbee none repeat scroll 0 0;
+	 overflow: hidden;
+	 padding: 50px 0;
+	 position: relative;
+}
+ a.btn, a.btn:visited, a.btn:hover, a.btn:active {
+	 color: #fff !important;
+}
+ .class-social {
+	 display: flex;
+	 margin-left: auto;
+	 margin-right: 10em;
+	 text-align: right;
+}
+ #scrollTo, #scrollTo:hover, #scrollTo:focus {
+	 color: #fff;
+}
+/* For the CLASS IN THE NEWS Section */
+ .news-list {
+	 margin-bottom: 2.5rem !important;
+}
+ .news-list {
+	 font: bold 1.25rem/calc(1.5em - 3px) "Milo",sans-serif;
+	 list-style: outside none none;
+	 padding-left: 0;
+}
+ .news-list .news-date, .news-list .news-source {
+	 color: #54585a;
+	 display: block;
+	 font-size: 1rem;
+	 line-height: 1.5;
+}
+ .news-list h3 {
+	 margin: 0;
+	 font: 2.25rem/calc(1em + 3px) "League Gothic",sans-serif;
+	 text-transform: none;
+}
+ .news-list li {
+	 padding: 0 0 15px 0;
+}
+ .news-professor{
+	 color:#54585a;
+	 display:block;
+	 font-size:.90rem;
+	 line-height:1.5;
+	 font-weight: normal;
+	 font-style: italic;
+}
+/* end of CLASS In the News section */
+/*this can be use if you have a whole image on one of the sections that needs to be link */
+ #big-game > .container{
+	 margin-bottom: 0px;
+	 margin-left: 0px;
+	 margin-right: 0px;
+	 margin-top: 0px ! important;
+	 max-width: none;
+	 padding: 0px;
+}
+ #big-game {
+	 padding:0px ;
+}
+ #welcome {
+	 min-height: 500px;
+}
+/* this can be used if you need a second h1 */
+.our-college h1::before {
+    background: #c8102e none repeat scroll 0 0;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1920px;
+    z-index: -1;
+}
+
+.our-college h1 {
+    background: #c8102e none repeat scroll 0 0;
+    color: white;
+    display: inline-block;
+    letter-spacing: 0;
+    margin: 0;
+    padding: 0.625rem 1.25rem 0.625rem 0;
+    position: relative;
+    z-index: 1;
+}
+.our-college h1 {
+    margin-top: 0;
+}
+.our-college {
+    margin-bottom:1.5rem;
+}
+/* @media screen and (min-width: 600px) {
+#left-bk-img {
+    padding-left: 15em;
+}
+}*/
+@media screen and (min-width: 600px) {
+#right-bk-img {
+    background: black url('https://www.uh.edu/class/_images/feature/2018/180313-green.png') no-repeat bottom right;
+        background-size: auto auto;
+    background-size: contain;
+    padding-right: 25%;
+    padding-left: 8%;
+}
+}
+#right-bk-img {
+    background-color: #54585a;
+    color: white;
+}
+.stats-number{
+     text-shadow: 1px 1px 2px #000000, 0px 0px 1em #000000, 0px 0px 0.2em #000000 ;
+}
+.stats-item {
+     text-shadow: 1px 1px 2px #000000, 0px 0px 1em #000000, 0px 0px 0.2em #000000 ;
+}
+
+
+
+.event-view-date, .event-view-time {
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+}
+.event-view-title {
+    font-family: 'Milo', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 26px;
+    text-transform: none;
+}
+p .event-content {
+    margin: 1em 0;
+}
+
+ .icons-class{
+                background: #FFF9D9;
+    border-radius: 50%;
+    display: block;
+    height: 50px;
+    padding: 8px;
+    transition: background .25s ease;
+    width: 50px;
+    color: white;
+    margin-bottom: .75em;
+    margin-right: .25em;
+        }
+        
+        @media screen and (min-width: 500px) {
+	 .icons-class{
+                background: #FFF9D9;
+    border-radius: 50%;
+    display: block;
+    height: 40px;
+    width: 40px;
+    margin-bottom: .75em;
+    margin-right: .25em;
+		 padding:8px !important;
+	}
+	
+}
+

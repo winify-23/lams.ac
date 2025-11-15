@@ -1,0 +1,25 @@
+/***********************************************************************
+	Official COE wide page stylesheet.  
+	This stylesheet is imported into official UH template stylesheets.
+	It is not intended to be directly referenced by HTML pages.  
+	Created: Oct 2014, by the University Marketing.  
+
+
+ CONTENTS: 
+	
+ 	CLASSES
+	---------
+
+	
+/************************************************************************/
+
+
+
+
+.stats h1::before {
+    background: #ffffff;
+}
+
+
+
+

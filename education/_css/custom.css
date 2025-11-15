@@ -1,0 +1,31 @@
+/* Custom sitewide CSS */
+
+/*** GRADUATE INFORMATION SESSION STYLING ***/
+@media (min-width: 768px) {
+	.modal-open {
+    	padding-right: 0 !important; /* prevents added whitespace on modal open */
+  	}
+}
+.ribbon {
+	--r: .8em; /* controls the cutout on the sticky ribbon */
+  	border-block: .5em solid #F6BE00; /* gold border on the ribbon */
+	color: #fff;
+  	padding-inline: calc(var(--r) + .25em) .5em;
+  	line-height: 1.8;
+  	clip-path: polygon(0 0,100% 0,100% 100%,0 100%,0 calc(100% - .25em),var(--r) 50%,0 .25em);
+  	background: radial-gradient(.2em 50% at right,#000a,#0000) border-box, #c8102e padding-box; /* red color of the ribbon  */
+  	width: fit-content;
+	position: fixed; /* makes the ribbon stick to the viewport */
+	right: 0; /* positions the ribbon 0px from the right edge */
+	top: 30%; /* positions ribbon vertically 30% of viewport from the top */
+	transform: translateY(-30%); /* adjusts vertical placement on scroll */
+  	z-index: 1000; /* ensures the ribbon appears "on top of" other content */
+  	max-width: 300px;
+  	text-align: center;
+	cursor: pointer;
+}
+.ribbon h3 { 
+	padding-left: .5em; 
+	text-transform: uppercase; 
+}
+/*** END GRADUATE INFORMATION SESSION STYLING ***/

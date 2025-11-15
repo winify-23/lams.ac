@@ -1,0 +1,75 @@
+/*landing hero*/
+@media (min-width: 768px) {
+	#hero-bg::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 1919px;
+		height: 701px;
+		background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 35%, rgba(255,255,255,0) 65%);
+		pointer-events: none;
+		z-index: 1;
+	}
+	.hero-text {
+		position: relative;
+		color: #fff;
+		z-index: 2;
+	}
+	#hero-bg {
+		position: relative;
+	}
+}
+/*social media*/
+.social-icon {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	text-decoration: none;
+	background-color: #C8102E;
+	color: white;
+	font-size: 25px;
+}
+.social-grid {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	gap: 10px;
+	justify-items: center;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+/*hero form*/
+.hero-form {
+	margin-left: auto;
+	background-color: white; 
+	border-radius: 12px;
+	padding: 25px;
+	width:100%;
+	max-width: 500px;
+	max-height: 500px;
+	z-index: 3;
+	position: relative;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+	color: black;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+.hero-form h4 {
+	margin: 0 0 10px 0 !important;
+}
+.hero-form-content {
+	padding: 0px;
+	flex: 1;
+	max-height: calc(525px - 80px); /* Subtract header height */
+}
+@media (max-width: 767px) {
+	.hero-form{
+		margin: -10px 30px 30px 30px;
+	}
+}

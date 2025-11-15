@@ -1,0 +1,63 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+
+#myTabContent img {
+  border-radius: 4px;
+  width: 100%;
+}
+
+#myTabContent h3 {
+  font: 1.4rem 'Milo', sans-serif;
+  margin-bottom: 10px;
+}
+
+#myTabContent p {
+  margin: 0;
+  color: #777;
+  font-style: italic;
+}
+
+#myTab .nav-link.active {
+  background-color: #c8102e; /* active tab background */
+  color: white;
+}
+
+
+#info .bi {
+    font-size:30px;
+    color:#c8102e;
+}
+
+
+#info h3 {
+    color: #2c2c2c;
+    font-family: Milo;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.55rem;
+}
+
+#info h3 a {
+    color:inherit;
+}
+
+#info h3 a:hover {
+    text-decoration: underline;
+}
+
+#info p {
+    color: #747474;
+
+}
+
+/* Removal of this will display a hidden field on reservations form. */
+/* Removal of field will break form's sender.php functionality. */
+.asf {
+    display: none;
+}
+
+#myform {
+    margin: 50px auto;
+    display: block;
+    max-width: 1740px;
+    width: 50%;
+}

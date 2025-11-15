@@ -1,0 +1,433 @@
+/* Split content container - main layout component */
+.split-content-container-cougar {
+    width: 100%;
+    max-width: 1520px;
+    height: auto;
+    background-color: #FFFFFF;
+    border: 1px solid #E9E9E9;
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0;
+}
+
+ul.spaced-list li,
+ol.spaced-list li {
+    line-height: 1.5;
+    margin-bottom: 2em; 
+    padding-left: 1em;
+}
+
+/* Contact us Directories */
+.profile-card {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.profile-card:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+.profile-card img {
+    width: 160px;
+    height: 157px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px;
+    border: none;
+}
+
+.profile-info h4 {
+    margin: 0 0 0.5rem;
+    font-size: 1.3rem;
+    color: #000;
+}
+
+.profile-info p {
+    margin: 0.2rem 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+.year-group {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+}
+
+.year-group h3 {
+    margin-top: 0;
+    color: #c8102e;
+    font-weight: bold;
+}
+
+/* Text content section */
+.text-content {
+    width: 100%;
+    max-width: 760px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 30px 40px;
+    height: 100%;
+}
+
+.text-content h2 {
+    text-align: start !important;
+}
+
+.text-content ul {
+    width: 100%;
+}
+
+/* Image content */
+.image-content img {
+    width: 760px;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Arrow link styling */
+.arrow-link {
+    list-style: none;
+    font-size: 18px;
+    padding: 4px;
+    position: relative;
+}
+
+.arrow-link a {
+    color: #000000 !important;
+    display: block;
+    width: 100%;
+    text-decoration: none !important;
+}
+
+.arrow-link a:hover {
+    text-decoration: none !important;
+}
+
+.arrow-link::after {
+    background-image: url(https://www.uh.edu/undergraduate-admissions/explore-campus/_images/vector-black.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    display: inline-block;
+    height: 15px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+}
+
+/* Content column items for Career Services links */
+.content-column-items {
+    width: 100%;
+}
+
+.content-column-items ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-bottom: 60px;
+    padding: 0;
+}
+
+.content-column-items ul li {
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    justify-content: space-between;
+    padding: 2.5px 0 2.5px 40px;
+    width: 100%;
+    background-color: #F5F5F5;
+    margin-bottom: 4px;
+}
+
+.content-column-items ul li:hover {
+    background-color: #e9e9e9;
+}
+
+.content-column-items ul li a {
+    align-items: center;
+    color: #000000 !important;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    width: 100%;
+}
+
+/* ===========================
+   TABLET AND ABOVE (≥ 768px)
+   =========================== */
+@media (min-width: 768px) {
+    .split-content-container-cougar {
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        border-radius: 8px;
+    }
+    
+    .text-content p {
+        max-width: 480px;
+    }
+    
+    .image-content img {
+        border-radius: 8px;
+    }
+    
+    .content-column-items {
+        margin-bottom: auto;
+    }
+}
+
+/* ===========================
+   TABLET ONLY (768px - 992px)
+   =========================== */
+@media (min-width: 768px) and (max-width: 992px) {
+    .text-content {
+        padding: 40px 20px 20px 40px;
+    }
+}
+
+/* ===========================
+   DESKTOP (≥ 1200px)
+   =========================== */
+@media (min-width: 1200px) {
+    .split-content-container-cougar {
+        border-radius: 8px;
+    }
+    
+    .text-content {
+        padding: 60px 50px 60px 120px;
+    }
+    
+    .text-content ul {
+        margin-left: -20px;
+    }
+    
+    .arrow-link a {
+        margin-left: -20px;
+    }
+    
+    .content-column-items ul {
+        column-gap: 40px;
+    }
+    
+    .content-column-items {
+        margin-bottom: 0px;
+    }
+}
+
+/* ===========================
+   MOBILE COMPACT (≤ 767.98px)
+   - flatten wrappers
+   - fix arrow-links
+   - stack cta buttons
+   =========================== */
+@media (max-width: 767.98px) {
+    
+    .section-grid {
+        margin: 0 10px;
+    }
+    
+    /* Split content container */
+    .split-content-container-cougar {
+        background-color: #FFFFFF;
+    }
+    
+    /* Text content section - with proper padding */
+    .text-content {
+        width: 100%;
+        max-width: 760px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        box-sizing: border-box;
+        padding: 10px;
+        height: 100%;
+    }
+    
+    /* Stack and align CTA buttons - LEFT aligned */
+    .hero-text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        text-align: left;
+    }
+    
+    .hero-text > div {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 8px !important;
+        row-gap: 8px !important;
+        column-gap: 0 !important;
+        width: 100%;
+    }
+    
+    /* Make buttons left-aligned */
+    .hero-text .btn-snippet,
+    .hero-text a.btn,
+    .hero-text table[data-snippet="ou-button"] a {
+        display: block;
+        width: 100%;
+        max-width: 320px;
+        text-align: center;
+        margin: 0 0 8px 0 !important;
+    }
+    
+    /* Left-align hero headings and text */
+    .hero-text h1,
+    .hero-text h2,
+    .hero-text h3,
+    .hero-text p {
+        text-align: left !important;
+    }
+    
+    /* Kill container side gutters and nested spacing in bg-secondary sections */
+    .bg-secondary .container,
+    .bg-secondary .d-flex,
+    .bg-secondary .w-100.d-grid > div {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    
+    .bg-secondary .w-100.d-grid > h2 {
+        padding: 0 !important;
+        margin: 0 10px !important;
+    }
+    
+    /* Flatten cards that wrap lists */
+    .bg-secondary .card {
+        background: #fff !important;
+        box-shadow: none !important;
+        border: 0 !important;
+        padding: 1rem 0.75rem !important;
+        margin: 0 0 1rem 0 !important;
+    }
+    
+    /* Arrow links: remove outer gaps */
+    .content-column-items li.arrow-link {
+        list-style: none;
+        margin: 0 0 6px 0 !important;
+    }
+    
+    /* Arrow links: comfy inner padding (no right cram) */
+    .content-column-items li.arrow-link > a {
+        display: block;
+        width: 100%;
+        padding: 2px 10px;
+        text-decoration: none;
+    }
+    
+    /* Arrow positioning on mobile */
+    .arrow-link::after {
+        background-image: url(https://www.uh.edu/undergraduate-admissions/explore-campus/_images/vector-black.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        content: "";
+        display: inline-block;
+        height: 15px;
+        position: absolute;
+        right: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 15px;
+    }
+    
+    /* Remove upstream 40px indent on mobile */
+    .content-column-items li.arrow-link,
+    .content-column-items ul {
+        margin-left: 0 !important;
+        padding-left: 0 !important;
+    }
+    
+    .content-column-items li.arrow-link::before {
+        margin-left: 0 !important;
+        padding-left: 0 !important;
+    }
+}
+
+/*landing hero*/
+@media (min-width: 768px) {
+
+	.hero-text {
+		position: relative;
+		align-items: center!important;
+		margin-left: 0 !important;
+		padding-left: 0 !important;
+		color: #fff;
+		z-index: 2;
+	}
+	#hero-bg {
+		position: relative;
+	}
+}
+/*social media*/
+.social-icon {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	text-decoration: none;
+	background-color: #C8102E;
+	color: white;
+	font-size: 25px;
+}
+.social-grid {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	gap: 10px;
+	justify-items: center;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+/*hero form*/
+.hero-form {
+	margin-left: auto;
+	background-color: white; 
+	border-radius: 12px;
+	padding: 25px;
+	width:100%;
+	max-width: 400px;
+	max-height: 500px;
+	z-index: 3;
+	position: relative;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+	color: black;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+.hero-form h4 {
+	margin: 0 0 10px 0 !important;
+}
+.hero-form-content {
+	padding: 0px;
+	overflow-y: auto;
+	flex: 1;
+	max-height: calc(525px - 80px); /* Subtract header height */
+}
+@media (max-width: 767px) {
+	.hero-form{
+		margin: -10px 30px 30px 15px;
+	}
+}

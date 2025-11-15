@@ -1,0 +1,52 @@
+/***********************************************************************
+	Official COE wide page stylesheet.  
+	This stylesheet is imported into official UH template stylesheets.
+	It is not intended to be directly referenced by HTML pages.  
+	Created: Oct 2014, by the University Marketing.  
+
+
+ CONTENTS: 
+	
+ 	CLASSES
+	---------
+
+	
+/************************************************************************/
+
+/* Scale Section */
+
+#covid-19-banner-gold-text a {
+    /*display: block;*/
+   
+    padding-bottom: .85rem;
+}
+#covid-19-banner-gold-text {
+    background-color: #f6be00;
+    font-size: 1.3rem;
+    padding: 0;
+    font-family: 'League Gothic';
+    
+}
+#covid-19-banner-gold-text .col-auto,
+#covid-19-banner-gold-text .container {
+    padding: 30;
+}
+
+#high-quality-education .section-heading {
+            display: block;
+            text-align: center;
+}
+#high-quality-education .education-section-text {
+            max-width: 740px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+}
+#high-quality-education {
+    /*margin-top: 100px;*/
+}
+
+#high-quality-education .section-heading {
+    margin: 0 !important;
+}
+

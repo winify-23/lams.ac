@@ -1,0 +1,58 @@
+/* ======== Sticky Tab ======== */
+/* UH HOME */
+#sticky {
+  padding: 20px 0;
+  width: 150px;
+  margin-right: 0;
+  position: fixed;
+  background: #c8102e;
+  right: 0;
+  top: 30vh;
+  z-index: 999;
+  transform-origin: 100% 50%;
+  transition: all .3s;
+  font-family: 'League Gothic';
+  text-transform: uppercase;
+  border-left: 5px solid #f6be00;
+  }
+#sticky:hover {
+  transform: scale(1.1);
+  }
+#sticky .container {
+    padding-left: 5px;
+  }
+#sticky a {
+  color: #ffffff;
+  font-size: 2rem;
+  line-height: 2rem;
+  }
+  
+  
+  /* ======== continuity for faculty ====== */
+  
+  #sticky2 {
+  padding: 20px 0;
+  width: 150px;
+  margin-right: 0;
+  position: fixed;
+  background: #960C22;
+  right: 0;
+  top: 35vh;
+  z-index: 999;
+  transform-origin: 100% 50%;
+  transition: all .3s;
+  font-family: 'League Gothic';
+  text-transform: uppercase;
+  border-left: 5px solid #fff9d9;
+  }
+#sticky2:hover {
+  transform: scale(1.1);
+  }
+#sticky2 .container {
+    padding-left: 5px;
+  }
+#sticky2 a {
+  color: #ffffff;
+  font-size: 2rem;
+  line-height: 2rem;
+  }

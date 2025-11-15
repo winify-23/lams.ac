@@ -1,0 +1,48 @@
+/* table of content nav*/
+
+#nav-content-1{
+  scroll-margin-top: 0px;
+   scroll-margin-bottom: 100px;
+ }
+ #nav-content-2{
+  scroll-margin-top: 0px;
+   scroll-margin-bottom: 100px;
+ }
+ #nav-content-3{
+  scroll-margin-top: 0px;
+   scroll-margin-bottom: 0px;
+ }
+ .toc-site-nav html{
+  scroll-behavior: auto !important;
+ }
+ 
+ @media (max-width: 767px) {
+  .module.affix{
+  position: relative;
+ }
+ 
+   #sidebar {
+ width: 100%;
+}  
+ }
+
+ .nav-option {
+       width: 100%;
+ }
+
+/* .table-of-contents:has(li a.active) {
+  position: fixed;
+}
+
+.table-of-contents:not(:has(li a.active)) {
+  position: relative;
+} */
+
+ .table-of-contents li:has(a.active) {
+  background-color: #C8102E;
+ }
+.table-of-contents li:has(a.active) a {
+  color: white;
+}
+
+
