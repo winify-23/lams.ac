@@ -1339,7 +1339,7 @@
 /***** Navigation - Main *****/
 @media (min-width: 992px) {
   .nav-main {
-    background: #7b5d2b;
+    background: #ffff;
     padding: 12px 0;
   }
 }
@@ -1378,7 +1378,7 @@
 }
 
 .nav-main img {
-  height: 60px;
+  height: 110px;
 }
 
 @media (min-width: 992px) {
@@ -1710,7 +1710,7 @@
 
 /***** Navigation - Desktop *****/
 #nav-desktop {
-  background-color: #ffffff;
+  background-color: #7b5d2b;
 }
 
 @media (max-width: 991px) {
@@ -1971,6 +1971,30 @@
     width: 50%;
     float: left;
   }
+}
+
+#banner{
+  background: #7b5d2b;
+  color: #ffffff;
+
+}
+#banner-features .vision-item {
+  padding: 10px 50px;
+  text-align: justify;
+}
+#banner-features .vision-title {
+  color: #ffffff;
+  margin-bottom: 12px;
+  font-size: 1.7rem;
+}
+#banner-features .vision-text {
+  color: rgba(255,255,255,0.9);
+  line-height: 1.6;
+  font-size: 0.95rem;
+  max-width: 420px;
+}
+@media (max-width: 767px) {
+  #banner-features .vision-item { text-align: left; margin-bottom: 20px; }
 }
 
 #nav-desktop .white-btn {
