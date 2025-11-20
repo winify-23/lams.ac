@@ -1735,7 +1735,7 @@
 }
 
 #nav-desktop .caret {
-  border: solid #111111;
+  border: solid #ffffff;
   border-width: 0 1px 1px 0;
   display: inline-block;
   padding: 4px;
@@ -1757,7 +1757,7 @@
 #nav-desktop .dropdown-toggle[aria-expanded=true],
 #nav-desktop .dropdown-toggle:hover {
   text-decoration: underline !important;
-  text-decoration-color: #7b5d2b !important;
+  text-decoration-color: #ffffff !important;
   text-decoration-thickness: 4px !important;
   text-underline-offset: 28px !important;
 }
