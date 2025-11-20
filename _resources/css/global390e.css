@@ -7271,7 +7271,7 @@ footer #categories {
 /***** Navigation - Main *****/
 @media (min-width: 992px) {
   .nav-main {
-    background: #7b5d2b;
+    background: #ffffff;
     padding: 12px 0;
   }
 }
@@ -7308,7 +7308,7 @@ footer #categories {
 }
 
 .nav-main img {
-  height: 60px;
+  height: 110px;
 }
 
 @media (min-width: 992px) {
