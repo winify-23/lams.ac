@@ -629,15 +629,6 @@
   margin-bottom: 10px;
 }
 
-#multi-pride-point li img,
-#hero-pride-point li img,
-.pride-points li img {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: -15px;
-}
-
 .date-ribbon span:first-child:before {
   content: "";
   border-top: 1px solid #000;

@@ -8002,6 +8002,7 @@ footer #categories {
 #nav-desktop.navbar {
   margin-bottom: 0;
   border: 0;
+  min-height: 75px;
 }
 
 .navbar-default .navbar-nav > .open > a,
