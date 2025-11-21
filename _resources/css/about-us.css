@@ -692,9 +692,6 @@
   border-right: 1px solid #ddd;
   color: var(--lams-text-dark);
   appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  background-image: none;
 }
 
 .about-find-course-button {
