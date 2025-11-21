@@ -1,0 +1,757 @@
+/* ============================================
+   ABOUT US PAGE STYLES
+   ============================================ */
+
+/* Color Variables */
+:root {
+  --lams-primary: #381a10;
+  --lams-primary-hover: #4a2315;
+  --lams-light-bg: #f8f8f8;
+  --lams-card-bg: #f6f5f5;
+  --lams-beige: #e8d5c4;
+  --lams-peach: #f9dbcd;
+  --lams-text-dark: #333;
+  --lams-text-gray: #555;
+  --lams-text-light-gray: #666;
+  --lams-input-text: #392e2e;
+  --lams-black: #000000;
+  --lams-white: #fff;
+  --lams-font-primary: "Hind", sans-serif;
+}
+* {
+  font-family: var(--lams-font-primary);
+  letter-spacing: 0;
+  line-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* ============================================
+   FONT CLASSES - HIND & POPPINS
+   ============================================ */
+.hind-light {
+  font-family: "Hind", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.hind-regular {
+  font-family: "Hind", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.hind-medium {
+  font-family: "Hind", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.hind-semibold {
+  font-family: "Hind", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.hind-bold {
+  font-family: "Hind", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* ============================================
+   FONT CLASSES - IBARRA REAL NOVA
+   ============================================ */
+.ibarra-regular {
+  font-family: "Ibarra Real Nova", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ibarra-medium {
+  font-family: "Ibarra Real Nova", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.ibarra-semibold {
+  font-family: "Ibarra Real Nova", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.ibarra-bold {
+  font-family: "Ibarra Real Nova", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.ibarra-regular-italic {
+  font-family: "Ibarra Real Nova", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.ibarra-medium-italic {
+  font-family: "Ibarra Real Nova", serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.ibarra-semibold-italic {
+  font-family: "Ibarra Real Nova", serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.ibarra-bold-italic {
+  font-family: "Ibarra Real Nova", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* ============================================
+   HEADER SECTION
+   ============================================ */
+.about-header {
+  background-color: var(--lams-primary);
+  padding: 40px 0;
+}
+
+.about-header-title {
+  color: var(--lams-white);
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.about-header-nav {
+  color: var(--lams-white);
+  font-size: 14px;
+}
+
+/* ============================================
+   SLOGAN & INTRODUCTION SECTION
+   ============================================ */
+.about-intro-section {
+  background-color: var(--lams-white);
+  padding: 80px 0;
+}
+
+.about-slogan-column {
+  padding-right: 50px !important;
+}
+
+.about-intro-text-column {
+  padding-left: 150px !important;
+  width: 952px;
+}
+
+.about-slogan-wrapper {
+  border-left: 4px solid var(--lams-primary);
+  padding-left: 30px;
+}
+
+.about-slogan-label {
+  color: var(--lams-text-light-gray);
+  font-size: 32px;
+  white-space: nowrap;
+  letter-spacing: 0;
+  line-height: 100%;
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+
+.about-slogan-title {
+  color: var(--lams-text-dark);
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 100%;
+  font-family: var(--lams-font-primary);
+}
+
+.about-intro-text {
+  color: var(--lams-text-gray);
+  font-size: 24px;
+  line-height: 100%;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* ============================================
+   FEATURES SECTION (3 COLUMNS)
+   ============================================ */
+.about-features-section {
+  background-color: var(--lams-white);
+  padding: 60px 0 80px;
+}
+
+.about-feature-card {
+  background-color: var(--lams-card-bg);
+  border-left: 3px solid var(--lams-primary);
+  padding: 40px 30px;
+  height: 100%;
+  min-height: 320px;
+  min-width: 403px;
+}
+
+.about-feature-number {
+  font-size: 96px;
+  font-weight: 700;
+  color: var(--lams-primary);
+  margin-bottom: 20px;
+  line-height: 100%;
+  letter-spacing: 0;
+}
+
+.about-feature-title {
+  color: var(--lams-primary);
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-family: var(--lams-font-primary);
+}
+
+.about-feature-text {
+  color: var(--lams-primary);
+  font-size: 24px;
+  line-height: 100%;
+  font-weight: 600;
+  font-family: var(--lams-font-primary);
+  margin: 0;
+}
+
+/* ============================================
+   QUOTE BANNER SECTION
+   ============================================ */
+.about-quote-banner {
+  padding: 0;
+  position: relative;
+  border-top: 2px solid var(--lams-primary);
+  border-bottom: 2px solid var(--lams-primary);
+}
+
+.about-quote-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.about-quote-text {
+  color: var(--lams-white);
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.4;
+  text-align: center;
+  max-width: 900px;
+  margin: 80px auto 20px;
+  font-family: var(--lams-font-primary);
+  display: block;
+  width: 100%;
+}
+
+.about-quote-author {
+  color: var(--lams-white);
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+  font-style: italic;
+  font-family: var(--lams-font-primary);
+  display: block;
+  width: 100%;
+}
+
+/* ============================================
+   GRADUATION IMAGES & TEXT SECTION
+   ============================================ */
+.about-graduation-section {
+  background-color: var(--lams-white);
+  padding: 80px 0;
+}
+
+.about-graduation-images {
+  position: relative;
+  padding-right: 20px;
+}
+
+/* .about-graduation-separator {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: var(--lams-primary);
+} */
+
+.about-graduation-image {
+  width: 100%;
+  height: 670px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+  min-width: 0;
+}
+
+.about-graduation-content-wrapper {
+  position: relative;
+  padding-left: 20px;
+  border-left: 2px solid var(--lams-primary);
+  display: flex;
+  align-items: baseline;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.about-graduation-content-label {
+  color: var(--lams-black);
+  font-size: 32px;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.about-graduation-content-title {
+  color: var(--lams-text-dark);
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  font-family: var(--lams-font-primary);
+  margin-top: 0;
+}
+
+.about-graduation-content-text {
+  color: var(--lams-text-gray);
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+/* ============================================
+   BUTTONS
+   ============================================ */
+.btn-lams-primary {
+  display: inline-block;
+  background-color: var(--lams-primary);
+  color: var(--lams-white);
+  padding: 15px 40px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-lams-primary:hover {
+  background-color: var(--lams-primary-hover);
+  color: var(--lams-white);
+}
+
+/* ============================================
+   HOW IT WORKS SECTION
+   ============================================ */
+.about-how-it-works-section {
+  background-color: var(--lams-light-bg);
+  padding: 100px 0;
+}
+
+.about-how-it-works-label {
+  color: var(--lams-black);
+  font-size: 32px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.about-how-it-works-title {
+  color: var(--lams-black);
+  font-size: 64px;
+  font-weight: 600;
+  margin: 0 0 80px 0;
+  font-family: var(--lams-black);
+}
+
+.about-how-it-works-image {
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.about-step-card {
+  background-color: var(--lams-card-bg);
+  border-left: 3px solid var(--lams-primary);
+  border-radius: 8px;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.about-step-card:last-child {
+  margin-bottom: 0;
+}
+
+.about-step-icon-box {
+  min-width: 59px;
+  height: 59px;
+  background-color: var(--lams-primary);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 20px;
+}
+
+.about-step-icon {
+  font-size: 28px;
+  color: var(--lams-white);
+}
+
+.about-step-title {
+  color: var(--lams-primary);
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-family: var(--lams-primary);
+}
+
+.about-step-text {
+  font-weight: 600;
+  color: var(--lams-primary);
+  font-size: 24px;
+  margin: 0;
+}
+
+/* ============================================
+   SUBSCRIBE SECTION
+   ============================================ */
+.about-subscribe-section {
+  background-color: var(--lams-peach);
+  padding: 60px 0;
+}
+
+.about-subscribe-title {
+  color: var(--lams-black);
+  font-size: 58px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-family: var(--lams-primary);
+}
+
+.about-subscribe-text {
+  color: var(--lams-primary);
+  font-size: 24px;
+  margin: 0;
+}
+
+.about-subscribe-form {
+  display: flex;
+  gap: 0;
+  align-items: stretch;
+}
+
+.about-subscribe-input {
+  flex: 1;
+  padding: 15px 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px 0 0 4px;
+  border-right: none;
+  font-size: 16px;
+  outline: none;
+  color: var(--lams-input-text);
+}
+
+.about-subscribe-button {
+  background-color: var(--lams-primary);
+  color: var(--lams-white);
+  border: none;
+  padding: 15px 25px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 270px;
+  transition: background-color 0.3s;
+  flex-shrink: 0;
+}
+
+.about-subscribe-button:hover {
+  background-color: var(--lams-primary-hover);
+}
+
+/* ============================================
+   ALL CATEGORIES SECTION
+   ============================================ */
+.about-categories-section {
+  padding: 80px 0;
+  margin-top: 100px;
+}
+
+.about-categories-container {
+  border-radius: 12px;
+  padding: 60px;
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+}
+
+.about-categories-images-wrapper {
+  position: relative;
+  min-height: 450px;
+  padding: 40px 20px;
+}
+
+.about-category-image-top {
+  width: 523px;
+  height: 523px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 20px;
+  right: 60px;
+  z-index: 2;
+  border: 1px solid var(--lams-beige);
+}
+
+.about-category-image-bottom {
+  width: 626px;
+  height: 788px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  bottom: 20px;
+  z-index: 1;
+  border: 1px solid var(--lams-beige);
+}
+
+.about-category-feature {
+  margin-bottom: 40px;
+}
+
+.about-category-feature:last-of-type {
+  margin-bottom: 40px;
+}
+
+.about-category-icon-box {
+  min-width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.about-category-icon {
+  margin-top: 50px;
+  font-size: 68px;
+  color: var(--lams-primary);
+}
+
+.about-category-feature-title {
+  color: var(--lams-primary);
+  font-size: 58px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-family: var(--lams-primary);
+}
+
+.about-category-feature-text {
+  color: var(--lams-primary);
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* ============================================
+   FIND YOUR DREAM COURSE SECTION
+   ============================================ */
+.about-find-course-section {
+  padding: 100px 0;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+.about-find-course-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.about-find-course-title {
+  text-align: center;
+  color: var(--lams-white);
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 50px;
+  font-family: var(--lams-font-primary);
+}
+
+.about-find-course-search {
+  display: flex;
+  align-items: stretch;
+  width: auto;
+  margin: 0 auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  color: var(--lams-input-text);
+  gap: 0;
+}
+
+.about-find-course-input {
+  width: 626px;
+  flex-shrink: 0;
+  border: none;
+  background-color: #fafafa;
+  padding: 15px 30px;
+  font-weight: 600;
+  font-size: 32px;
+  outline: none;
+  border-radius: 50px 0 0 50px;
+  color: var(--lams-input-text);
+}
+
+.about-find-course-select {
+  width: 626px;
+  flex-shrink: 0;
+  border: none;
+  background-color: #fafafa;
+  padding: 15px 20px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 100%;
+  outline: none;
+  cursor: pointer;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  color: var(--lams-text-dark);
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: none;
+}
+
+.about-find-course-button {
+  width: 382px;
+  flex-shrink: 0;
+  background-color: var(--lams-peach);
+  color: var(--lams-primary);
+  border: none;
+  padding: 15px 40px;
+  font-size: 32px;
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  transition: background-color 0.3s;
+  border-radius: 0 50px 50px 0;
+}
+
+.about-find-course-button:hover {
+  background-color: var(--lams-primary-hover);
+}
+
+/* ============================================
+   RESPONSIVE STYLES
+   ============================================ */
+@media (max-width: 768px) {
+  .about-header-title {
+    font-size: 36px;
+  }
+
+  .about-slogan-title {
+    font-size: 32px;
+  }
+
+  .about-graduation-content-title {
+    font-size: 36px;
+  }
+
+  .about-how-it-works-title {
+    font-size: 42px;
+  }
+
+  .about-subscribe-title {
+    font-size: 36px;
+  }
+
+  .about-find-course-title {
+    font-size: 36px;
+  }
+
+  .about-find-course-search {
+    flex-direction: column;
+    border-radius: 12px;
+  }
+
+  .about-find-course-select {
+    border-left: none;
+    border-top: 1px solid #ddd;
+  }
+}
