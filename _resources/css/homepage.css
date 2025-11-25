@@ -719,7 +719,7 @@
 
   .content {
     text-align: center;
-    width: 740px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     font-size: 24px;
@@ -2134,6 +2134,7 @@
   }
 }
 
+
 @media (min-width: 1200px) {
   #nav-desktop .nav.navbar-nav>li>a {
     padding: 27.5px 10px;
@@ -2297,6 +2298,175 @@
     margin-top: -30px;
   }
 }
+
+
+/* ===================================================================
+   1440px+ – Tối ưu cho màn hình lớn (27", 32", ultrawide, 2K, 4K)
+   =================================================================== */
+@media (min-width: 1440px) {
+  .container,
+  #homepage-list-container,
+  #tour-campus-container,
+  #newsroom-title-category-search,
+  #multi-pride-point ul,
+  .pride-points,
+  #hero-pride-point ul,
+  #top-stories .section-grid {
+    max-width: 1380px;
+  }
+
+  /* Banner chính – to hơn, sang hơn */
+  #banner2 {
+    padding: 14rem 0;
+  }
+
+  #banner2 h1 {
+    font-size: 150px;
+    line-height: 0.95;
+    max-width: 1000px;
+  }
+
+  #banner2 p {
+    font-size: 32px;
+    line-height: 48px;
+    max-width: 900px;
+  }
+
+  /* CTA buttons */
+  #banner-cta {
+    column-gap: 40px;
+    row-gap: 50px;
+  }
+
+  #explore-majors {
+    max-width: 580px;
+    column-gap: 40px;
+  }
+
+  #admission-cta,
+  #banner2 .btn-custom {
+   
+  }
+
+  /* Vision / Mission / Philosophy */
+  #banner .vision-item {
+    padding: 40px 60px;
+  }
+
+  #banner .vision-title {
+    font-size: 2rem;
+  }
+
+  #banner .vision-text {
+    font-size: 1.1rem;
+    line-height: 1.7;
+  }
+
+  /* Section headings lớn hơn */
+  .section-heading {
+    font-size: 72px;
+    line-height: 1;
+  }
+
+  .sixten {
+    font-size: 64px;
+    line-height: 1.1;
+  }
+
+  /* Why Choose LAMS / Accreditation sections */
+  .value-paragraph,
+  #world-class-faculty .content,
+  #accessible-affordable p,
+  #career-readiness p {
+    font-size: 24px;
+    line-height: 40px;
+    max-width: 1000px;
+  }
+
+  .homepage-metric li .value {
+    font-size: 50px;
+    line-height: 1;
+  }
+
+  .homepage-metric li .text {
+    font-size: 20px;
+  }
+
+  /* Top Stories – news grid */
+  #top-stories .article-title {
+    font-size: 26px;
+    line-height: 1.3;
+  }
+
+  #top-stories .article-teaser {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  #top-stories .article-date {
+    font-size: 16px;
+  }
+
+  /* Find Your Dream Course – thanh search */
+  section[style*="home-find-course"] h2 {
+    font-size: 64px !important;
+    margin-bottom: 60px;
+  }
+
+  section[style*="home-find-course"] input,
+  section[style*="home-find-course"] select {
+    font-size: 24px !important;
+    padding: 25px 40px !important;
+  }
+
+  section[style*="home-find-course"] button {
+    font-size: 20px !important;
+    font-weight: 700;
+  }
+
+  /* Padding section chung */
+  .page-section {
+    padding: 50px 0;
+  }
+
+  #world-class-faculty,
+  #accessible-affordable,
+  #career-readiness {
+    padding: 140px 0;
+  }
+}
+
+/* Màn ultrawide 1680px+ – còn đẹp hơn nữa */
+@media (min-width: 1680px) {
+  .container {
+    max-width: 1520px;
+  }
+
+  #banner2 h1 {
+    font-size: 170px;
+    max-width: 1200px;
+  }
+
+  #banner2 p {
+    font-size: 36px;
+    line-height: 54px;
+    max-width: 1100px;
+  }
+
+  .section-heading,
+  .sixten {
+    font-size: 80px;
+  }
+
+  section[style*="home-find-course"] h2 {
+    font-size: 72px !important;
+  }
+}
+
+
+
+
+
 
 
 
