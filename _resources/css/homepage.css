@@ -742,8 +742,8 @@
 
 @media (min-width: 992px) {
   #world-class-faculty .section-heading {
-    font-size: 85px;
-    line-height: 85px;
+    font-size: 60px;
+    line-height: 60px;
   }
 
   #world-class-faculty .homepage-metric {
@@ -830,8 +830,8 @@
 .homepage-metric li .value {
   display: block;
   font-family: "League Gothic";
-  font-size: 42px;
-  line-height: 42px;
+  font-size: 30px;
+  line-height: 40px;
   margin-bottom: 5px;
 }
 
@@ -982,13 +982,13 @@
   .homepage-metric li .value {
     display: block;
     font-family: "League Gothic";
-    font-size: 60px;
-    line-height: 72px;
+    font-size: 47px;
+    line-height: 64px;
   }
 
   .section-heading {
-    font-size: 85px;
-    line-height: 85px;
+    font-size: 60px;
+    line-height: 60px;
   }
 }
 
@@ -1369,7 +1369,7 @@
 }
 
 .nav-main img {
-  height: 110px;
+  height: 70px;
 }
 
 @media (min-width: 992px) {
