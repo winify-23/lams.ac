@@ -371,13 +371,13 @@
   }
 
   #banner2 h1 {
-    font-size: 131px;
+    font-size: 120px;
     max-width: 740px;
     margin-top: 0;
   }
 
   #banner2 p {
-    font-size: 28px;
+    font-size: 22px;
     line-height: 42px;
     max-width: 740px;
   }
@@ -837,13 +837,13 @@
 
 .homepage-metric li .text {
   display: block;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 24px;
 }
 
 .red-btn {
   border-radius: 50px;
-  padding: 15px;
+  padding: 10px;
   font-size: 20px;
   line-height: 30px;
   display: block;
@@ -920,14 +920,19 @@
 
   .red-btn {
     display: inline-block;
-    min-width: 350px;
+    min-width: 300px;
   }
 }
 
 @media (min-width: 992px) {
+  .content {
+    font-size: 20px;
+  }
+
   .sixten {
     margin-left: 0 !important;
     margin-right: auto !important;
+    font-size: 18px;
   }
 
   .value-paragraph {
@@ -2433,33 +2438,6 @@
   #accessible-affordable,
   #career-readiness {
     padding: 140px 0;
-  }
-}
-
-/* Màn ultrawide 1680px+ – còn đẹp hơn nữa */
-@media (min-width: 1680px) {
-  .container {
-    max-width: 1520px;
-  }
-
-  #banner2 h1 {
-    font-size: 170px;
-    max-width: 1200px;
-  }
-
-  #banner2 p {
-    font-size: 36px;
-    line-height: 54px;
-    max-width: 1100px;
-  }
-
-  .section-heading,
-  .sixten {
-    font-size: 80px;
-  }
-
-  section[style*="home-find-course"] h2 {
-    font-size: 72px !important;
   }
 }
 

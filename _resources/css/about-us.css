@@ -535,7 +535,7 @@
 .about-step-title {
   color: var(--lams-primary);
   font-size: 38px;
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 15px;
 }
 
@@ -681,7 +681,7 @@
 .about-category-feature-title {
   color: var(--lams-primary);
   font-size: 36px;
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 10px;
   font-family: var(--lams-font-primary);
 }

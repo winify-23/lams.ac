@@ -240,19 +240,6 @@ img.jssocials-share-logo {
   vertical-align: middle;
 }
 
-#article-header-image::before {
-    content: "";
-    display: block;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: calc(3.375rem + 15px);
-    background-color: #f2f2f2;
-    z-index: 0;
-    position: absolute;
-    width: 1920px;
-}
-
 #newsroom-article p.lead {
   position: relative;
 }
