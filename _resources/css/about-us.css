@@ -21,7 +21,7 @@
 * {
   font-family: var(--lams-font-primary);
   letter-spacing: 0;
-  line-height: 100%;
+  line-height: 1.5;
   margin: 0;
   padding: 0;
 }
@@ -171,11 +171,13 @@
   font-size: 36px;
   font-weight: 600;
   margin-bottom: 10px;
+  font-family: var(--lams-font-primary);
 }
 
 .about-header-nav {
   color: var(--lams-white);
   font-size: 14px;
+  font-family: var(--lams-font-primary);
 }
 
 /* ============================================
@@ -183,7 +185,7 @@
    ============================================ */
 .about-intro-section {
   background-color: var(--lams-white);
-  padding: 80px 0;
+  padding: 50px 0;
 }
 
 .about-slogan-column {
@@ -202,26 +204,26 @@
 
 .about-slogan-label {
   color: var(--lams-text-light-gray);
-  font-size: 32px;
+  font-size: 30px;
   white-space: nowrap;
   letter-spacing: 0;
-  line-height: 100%;
-  margin-bottom: 15px;
+  line-height: 1.3;
+  margin-bottom: 10px;
   font-weight: 400;
 }
 
 .about-slogan-title {
   color: var(--lams-text-dark);
-  font-size: 64px;
+  font-size: 36px;
   font-weight: 400;
-  line-height: 100%;
+  line-height: 1.2;
   font-family: var(--lams-font-primary);
 }
 
 .about-intro-text {
   color: var(--lams-text-gray);
-  font-size: 24px;
-  line-height: 100%;
+  font-size: 18px;
+  line-height: 1.6;
   font-weight: 400;
   margin: 0;
 }
@@ -244,27 +246,27 @@
 }
 
 .about-feature-number {
-  font-size: 96px;
+  font-size: 64px;
   font-weight: 700;
   color: var(--lams-primary);
   margin-bottom: 20px;
-  line-height: 100%;
+  line-height: 1;
   letter-spacing: 0;
 }
 
 .about-feature-title {
   color: var(--lams-primary);
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   font-family: var(--lams-font-primary);
 }
 
 .about-feature-text {
   color: var(--lams-primary);
-  font-size: 24px;
-  line-height: 100%;
-  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 400;
   font-family: var(--lams-font-primary);
   margin: 0;
 }
@@ -290,12 +292,12 @@
 
 .about-quote-text {
   color: var(--lams-white);
-  font-size: 36px;
+  font-size: 24px;
   font-weight: 600;
   line-height: 1.4;
   text-align: center;
   max-width: 900px;
-  margin: 80px auto 20px;
+  margin: 40px auto 20px;
   font-family: var(--lams-font-primary);
   display: block;
   width: 100%;
@@ -337,7 +339,7 @@
 
 .about-graduation-image {
   width: 100%;
-  height: 670px;
+  height: 300px;
   background-size: cover;
   background-position: center;
   border-radius: 4px;
@@ -356,18 +358,72 @@
   flex-wrap: wrap;
 }
 
+.about-graduation-content-wrapper > div {
+  flex: 1;
+}
+
+/* ============================================
+   ALL CATEGORIES SECTION
+   ============================================ */
+.about-categories-section {
+  padding: 80px 0;
+  margin-top: 100px;
+}
+
+.about-categories-container {
+  border-radius: 12px;
+  padding: 60px;
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+}
+
+.about-categories-images-wrapper {
+  position: relative;
+  min-height: 450px;
+  padding: 40px 20px;
+}
+
+.about-category-image-top {
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 20px;
+  right: 60px;
+  z-index: 2;
+  border: 1px solid var(--lams-beige);
+}
+
+.about-category-image-bottom {
+  width: 400px;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  bottom: 20px;
+  z-index: 1;
+  border: 1px solid var(--lams-beige);
+}
+
 .about-graduation-content-label {
   color: var(--lams-black);
-  font-size: 32px;
+  font-size: 30px;
   letter-spacing: 1px;
   margin-bottom: 0;
   font-weight: 400;
+  flex-shrink: 0;
   white-space: nowrap;
+  flex-shrink: 0;
+  font-family: var(--lams-font-primary);
 }
 
 .about-graduation-content-title {
   color: var(--lams-text-dark);
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 600;
   line-height: 1.2;
   margin-bottom: 30px;
@@ -419,19 +475,20 @@
   letter-spacing: 2px;
   margin-bottom: 20px;
   font-weight: 400;
+  font-family: var(--lams-font-primary);
 }
 
 .about-how-it-works-title {
   color: var(--lams-black);
-  font-size: 64px;
+  font-size: 36px;
   font-weight: 600;
-  margin: 0 0 80px 0;
-  font-family: var(--lams-black);
+  margin: 0 0 40px 0;
+  font-family: var(--lams-font-primary);
 }
 
 .about-how-it-works-image {
   width: 100%;
-  height: 600px;
+  height: 300px;
   background-size: cover;
   background-position: center;
   border-radius: 8px;
@@ -469,17 +526,18 @@
 
 .about-step-title {
   color: var(--lams-primary);
-  font-size: 36px;
+  font-size: 24px;
   font-weight: 600;
   margin-bottom: 15px;
-  font-family: var(--lams-primary);
+  font-family: var(--lams-font-primary);
 }
 
 .about-step-text {
-  font-weight: 600;
+  font-weight: 400;
   color: var(--lams-primary);
-  font-size: 24px;
+  font-size: 16px;
   margin: 0;
+  line-height: 1.6;
 }
 
 /* ============================================
@@ -492,16 +550,17 @@
 
 .about-subscribe-title {
   color: var(--lams-black);
-  font-size: 58px;
+  font-size: 36px;
   font-weight: 600;
   margin-bottom: 15px;
-  font-family: var(--lams-primary);
+  font-family: var(--lams-font-primary);
 }
 
 .about-subscribe-text {
   color: var(--lams-primary);
-  font-size: 24px;
+  font-size: 18px;
   margin: 0;
+  font-family: var(--lams-font-primary);
 }
 
 .about-subscribe-form {
@@ -562,8 +621,8 @@
 }
 
 .about-category-image-top {
-  width: 523px;
-  height: 523px;
+  width: 300px;
+  height: 300px;
   background-size: cover;
   background-position: center;
   border-radius: 8px;
@@ -576,8 +635,8 @@
 }
 
 .about-category-image-bottom {
-  width: 626px;
-  height: 788px;
+  width: 400px;
+  height: 500px;
   background-size: cover;
   background-position: center;
   border-radius: 8px;
@@ -613,17 +672,58 @@
 
 .about-category-feature-title {
   color: var(--lams-primary);
-  font-size: 58px;
+  font-size: 36px;
   font-weight: 600;
   margin-bottom: 10px;
-  font-family: var(--lams-primary);
+  font-family: var(--lams-font-primary);
 }
 
 .about-category-feature-text {
   color: var(--lams-primary);
-  font-size: 24px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 400;
   margin: 0;
+  font-family: var(--lams-font-primary);
+  line-height: 1.6;
+}
+
+/* Ensure category features are responsive */
+@media (max-width: 768px) {
+  .about-category-feature {
+    margin-bottom: 30px;
+  }
+  
+  .about-category-icon {
+    margin-top: 30px;
+    font-size: 48px;
+  }
+  
+  .about-category-feature-title {
+    font-size: 28px;
+  }
+  
+  .about-category-feature-text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-category-feature {
+    margin-bottom: 20px;
+  }
+  
+  .about-category-icon {
+    margin-top: 20px;
+    font-size: 36px;
+  }
+  
+  .about-category-feature-title {
+    font-size: 24px;
+  }
+  
+  .about-category-feature-text {
+    font-size: 15px;
+  }
 }
 
 /* ============================================
@@ -717,29 +817,88 @@
 /* ============================================
    RESPONSIVE STYLES
    ============================================ */
+/* Mobile devices - iPhone, Android phones */
 @media (max-width: 768px) {
   .about-header-title {
-    font-size: 36px;
-  }
-
-  .about-slogan-title {
     font-size: 32px;
   }
 
+  .about-slogan-title {
+    font-size: 28px;
+  }
+
+  .about-slogan-label {
+    font-size: 24px;
+  }
+
+  .about-intro-text {
+    font-size: 16px;
+  }
+
+  .about-feature-number {
+    font-size: 56px;
+  }
+
+  .about-feature-title {
+    font-size: 20px;
+  }
+
+  .about-feature-text {
+    font-size: 16px;
+  }
+
+  .about-quote-text {
+    font-size: 20px;
+    margin: 30px auto 15px;
+  }
+
   .about-graduation-content-title {
-    font-size: 36px;
+    font-size: 32px;
+  }
+
+  .about-graduation-content-label {
+    font-size: 24px;
+  }
+
+  .about-graduation-content-text {
+    font-size: 16px;
   }
 
   .about-how-it-works-title {
-    font-size: 42px;
+    font-size: 36px;
+    margin: 0 0 30px 0;
+  }
+
+  .about-how-it-works-label {
+    font-size: 24px;
+  }
+
+  .about-step-title {
+    font-size: 20px;
+  }
+
+  .about-step-text {
+    font-size: 16px;
   }
 
   .about-subscribe-title {
-    font-size: 36px;
+    font-size: 32px;
+  }
+
+  .about-subscribe-text {
+    font-size: 16px;
+  }
+
+  .about-category-feature-title {
+    font-size: 32px;
+  }
+
+  .about-category-feature-text {
+    font-size: 16px;
   }
 
   .about-find-course-title {
-    font-size: 36px;
+    font-size: 32px;
   }
 
   .about-find-course-search {
@@ -750,5 +909,752 @@
   .about-find-course-select {
     border-left: none;
     border-top: 1px solid #ddd;
+  }
+
+  .about-slogan-column {
+    padding-right: 20px !important;
+  }
+
+  .about-intro-text-column {
+    padding-left: 20px !important;
+  }
+
+  .about-graduation-section {
+    padding: 50px 0;
+  }
+
+  .about-categories-section {
+    margin-top: 50px;
+  }
+
+  .about-categories-container {
+    padding: 30px;
+  }
+
+  .about-how-it-works-section {
+    padding: 60px 0;
+  }
+
+  .about-subscribe-section {
+    padding: 40px 0;
+  }
+
+  .about-feature-card {
+    padding: 30px 20px;
+    min-height: auto;
+  }
+
+  .about-step-card {
+    padding: 20px;
+  }
+
+  .about-categories-images-wrapper {
+    min-height: 300px;
+    padding: 20px 10px;
+  }
+
+  .about-graduation-images {
+    padding-right: 10px;
+  }
+
+  .about-graduation-content-wrapper {
+    padding-left: 10px;
+  }
+}
+
+/* Small mobile devices - iPhone SE, older Android phones */
+@media (max-width: 480px) {
+  .about-header-title {
+    font-size: 28px;
+  }
+
+  .about-slogan-title {
+    font-size: 24px;
+  }
+
+  .about-slogan-label {
+    font-size: 20px;
+  }
+
+  .about-intro-text {
+    font-size: 15px;
+  }
+
+  .about-feature-number {
+    font-size: 48px;
+  }
+
+  .about-feature-title {
+    font-size: 18px;
+  }
+
+  .about-feature-text {
+    font-size: 15px;
+  }
+
+  .about-quote-text {
+    font-size: 18px;
+    margin: 20px auto 10px;
+  }
+
+  .about-graduation-content-title {
+    font-size: 28px;
+  }
+
+  .about-graduation-content-label {
+    font-size: 20px;
+  }
+
+  .about-graduation-content-text {
+    font-size: 15px;
+  }
+
+  .about-how-it-works-title {
+    font-size: 32px;
+    margin: 0 0 20px 0;
+  }
+
+  .about-how-it-works-label {
+    font-size: 20px;
+  }
+
+  .about-step-title {
+    font-size: 18px;
+  }
+
+  .about-step-text {
+    font-size: 15px;
+  }
+
+  .about-subscribe-title {
+    font-size: 28px;
+  }
+
+  .about-subscribe-text {
+    font-size: 15px;
+  }
+
+  .about-category-feature-title {
+    font-size: 28px;
+  }
+
+  .about-category-feature-text {
+    font-size: 15px;
+  }
+
+  .about-find-course-title {
+    font-size: 28px;
+  }
+
+  .about-categories-container {
+    padding: 20px;
+  }
+
+  .about-graduation-images {
+    padding-right: 5px;
+  }
+
+  .about-graduation-content-wrapper {
+    padding-left: 5px;
+  }
+}
+
+/* Tablets - iPad, Android tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .about-header-title {
+    font-size: 36px;
+  }
+
+  .about-slogan-title {
+    font-size: 32px;
+  }
+
+  .about-intro-text {
+    font-size: 18px;
+  }
+
+  .about-feature-number {
+    font-size: 64px;
+  }
+
+  .about-feature-title {
+    font-size: 22px;
+  }
+
+  .about-feature-text {
+    font-size: 17px;
+  }
+
+  .about-quote-text {
+    font-size: 24px;
+    margin: 40px auto 20px;
+  }
+
+  .about-graduation-content-title {
+    font-size: 36px;
+  }
+
+  .about-graduation-content-text {
+    font-size: 17px;
+  }
+
+  .about-how-it-works-title {
+    font-size: 40px;
+    margin: 0 0 40px 0;
+  }
+
+  .about-step-title {
+    font-size: 22px;
+  }
+
+  .about-step-text {
+    font-size: 17px;
+  }
+
+  .about-subscribe-title {
+    font-size: 36px;
+  }
+
+  .about-subscribe-text {
+    font-size: 18px;
+  }
+
+  .about-category-feature-title {
+    font-size: 36px;
+  }
+
+  .about-category-feature-text {
+    font-size: 18px;
+  }
+
+  .about-find-course-title {
+    font-size: 36px;
+  }
+
+  .about-categories-images-wrapper {
+    min-height: 350px;
+  }
+
+  .about-graduation-images {
+    padding-right: 15px;
+  }
+
+  .about-graduation-content-wrapper {
+    padding-left: 15px;
+  }
+}
+
+/* Large tablets - iPad Pro, large Android tablets */
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .about-header-title {
+    font-size: 38px;
+  }
+
+  .about-slogan-title {
+    font-size: 34px;
+  }
+
+  .about-intro-text {
+    font-size: 19px;
+  }
+
+  .about-feature-number {
+    font-size: 68px;
+  }
+
+  .about-feature-title {
+    font-size: 23px;
+  }
+
+  .about-feature-text {
+    font-size: 18px;
+  }
+
+  .about-quote-text {
+    font-size: 26px;
+    margin: 50px auto 20px;
+  }
+
+  .about-graduation-content-title {
+    font-size: 38px;
+  }
+
+  .about-graduation-content-text {
+    font-size: 18px;
+  }
+
+  .about-how-it-works-title {
+    font-size: 42px;
+    margin: 0 0 50px 0;
+  }
+
+  .about-step-title {
+    font-size: 24px;
+  }
+
+  .about-step-text {
+    font-size: 18px;
+  }
+
+  .about-subscribe-title {
+    font-size: 38px;
+  }
+
+  .about-subscribe-text {
+    font-size: 19px;
+  }
+
+  .about-category-feature-title {
+    font-size: 38px;
+  }
+
+  .about-category-feature-text {
+    font-size: 19px;
+  }
+
+  .about-find-course-title {
+    font-size: 38px;
+  }
+
+  .about-categories-images-wrapper {
+    min-height: 400px;
+  }
+
+  .about-graduation-images {
+    padding-right: 15px;
+  }
+
+  .about-graduation-content-wrapper {
+    padding-left: 15px;
+  }
+}
+
+/* Laptop screens - 13 inch (1280x800) */
+@media (min-width: 1280px) and (max-width: 1365px) {
+  .about-slogan-title {
+    font-size: 40px;
+  }
+
+  .about-intro-text {
+    font-size: 18px;
+  }
+
+  .about-feature-number {
+    font-size: 60px;
+  }
+
+  .about-feature-title {
+    font-size: 22px;
+  }
+
+  .about-feature-text {
+    font-size: 16px;
+  }
+
+  .about-quote-text {
+    font-size: 24px;
+  }
+
+  .about-graduation-content-title {
+    font-size: 36px;
+  }
+
+  .about-graduation-content-text {
+    font-size: 16px;
+  }
+
+  .about-how-it-works-title {
+    font-size: 40px;
+  }
+
+  .about-step-title {
+    font-size: 24px;
+  }
+
+  .about-step-text {
+    font-size: 16px;
+  }
+
+  .about-subscribe-title {
+    font-size: 36px;
+  }
+
+  .about-subscribe-text {
+    font-size: 18px;
+  }
+
+  .about-category-feature-title {
+    font-size: 36px;
+  }
+
+  .about-category-feature-text {
+    font-size: 18px;
+  }
+
+  .about-graduation-images {
+    padding-right: 15px;
+  }
+
+  .about-graduation-content-wrapper {
+    padding-left: 15px;
+  }
+}
+
+/* Laptop screens - 15 inch (1366x768) */
+@media (min-width: 1366px) and (max-width: 1599px) {
+  .about-slogan-title {
+    font-size: 42px;
+  }
+
+  .about-intro-text {
+    font-size: 19px;
+  }
+
+  .about-feature-number {
+    font-size: 64px;
+  }
+
+  .about-feature-title {
+    font-size: 23px;
+  }
+
+  .about-feature-text {
+    font-size: 17px;
+  }
+
+  .about-quote-text {
+    font-size: 26px;
+  }
+
+  .about-graduation-content-title {
+    font-size: 38px;
+  }
+
+  .about-graduation-content-text {
+    font-size: 17px;
+  }
+
+  .about-how-it-works-title {
+    font-size: 42px;
+  }
+
+  .about-step-title {
+    font-size: 26px;
+  }
+
+  .about-step-text {
+    font-size: 17px;
+  }
+
+  .about-subscribe-title {
+    font-size: 38px;
+  }
+
+  .about-subscribe-text {
+    font-size: 19px;
+  }
+
+  .about-category-feature-title {
+    font-size: 38px;
+  }
+
+  .about-category-feature-text {
+    font-size: 19px;
+  }
+
+  .about-graduation-images {
+    padding-right: 20px;
+  }
+
+  .about-graduation-content-wrapper {
+    padding-left: 20px;
+  }
+}
+
+/* Laptop screens - 17 inch */
+@media (min-width: 1600px) and (max-width: 1919px) {
+  .about-slogan-title {
+    font-size: 44px;
+  }
+
+  .about-intro-text {
+    font-size: 20px;
+  }
+
+  .about-feature-number {
+    font-size: 68px;
+  }
+
+  .about-feature-title {
+    font-size: 24px;
+  }
+
+  .about-feature-text {
+    font-size: 18px;
+  }
+
+  .about-quote-text {
+    font-size: 27px;
+  }
+
+  .about-graduation-content-title {
+    font-size: 40px;
+  }
+
+  .about-graduation-content-text {
+    font-size: 18px;
+  }
+
+  .about-how-it-works-title {
+    font-size: 44px;
+  }
+
+  .about-step-title {
+    font-size: 27px;
+  }
+
+  .about-step-text {
+    font-size: 18px;
+  }
+
+  .about-subscribe-title {
+    font-size: 40px;
+  }
+
+  .about-subscribe-text {
+    font-size: 20px;
+  }
+
+  .about-category-feature-title {
+    font-size: 40px;
+  }
+
+  .about-category-feature-text {
+    font-size: 20px;
+  }
+
+  .about-graduation-images {
+    padding-right: 20px;
+  }
+
+  .about-graduation-content-wrapper {
+    padding-left: 20px;
+  }
+}
+
+/* Desktop monitors - 19-20 inch */
+@media (min-width: 1920px) and (max-width: 2099px) {
+  .about-slogan-title {
+    font-size: 46px;
+  }
+
+  .about-intro-text {
+    font-size: 21px;
+  }
+
+  .about-feature-number {
+    font-size: 70px;
+  }
+
+  .about-feature-title {
+    font-size: 25px;
+  }
+
+  .about-feature-text {
+    font-size: 19px;
+  }
+
+  .about-quote-text {
+    font-size: 28px;
+  }
+
+  .about-graduation-content-title {
+    font-size: 42px;
+  }
+
+  .about-graduation-content-text {
+    font-size: 19px;
+  }
+
+  .about-how-it-works-title {
+    font-size: 46px;
+  }
+
+  .about-step-title {
+    font-size: 28px;
+  }
+
+  .about-step-text {
+    font-size: 19px;
+  }
+
+  .about-subscribe-title {
+    font-size: 42px;
+  }
+
+  .about-subscribe-text {
+    font-size: 21px;
+  }
+
+  .about-category-feature-title {
+    font-size: 42px;
+  }
+
+  .about-category-feature-text {
+    font-size: 21px;
+  }
+
+  .about-graduation-images {
+    padding-right: 20px;
+  }
+
+  .about-graduation-content-wrapper {
+    padding-left: 20px;
+  }
+}
+
+/* Desktop monitors - 22-24 inch (2K) */
+@media (min-width: 2560px) and (max-width: 2999px) {
+  .about-slogan-title {
+    font-size: 48px;
+  }
+
+  .about-graduation-content-label {
+    font-size: 30px;
+  }
+
+  .about-intro-text {
+    font-size: 22px;
+  }
+
+  .about-feature-number {
+    font-size: 72px;
+  }
+
+  .about-feature-title {
+    font-size: 26px;
+  }
+
+  .about-feature-text {
+    font-size: 20px;
+  }
+
+  .about-quote-text {
+    font-size: 30px;
+  }
+
+  .about-graduation-content-title {
+    font-size: 44px;
+  }
+
+  .about-graduation-content-text {
+    font-size: 20px;
+  }
+
+  .about-how-it-works-title {
+    font-size: 48px;
+  }
+
+  .about-step-title {
+    font-size: 30px;
+  }
+
+  .about-step-text {
+    font-size: 20px;
+  }
+
+  .about-subscribe-title {
+    font-size: 44px;
+  }
+
+  .about-subscribe-text {
+    font-size: 22px;
+  }
+
+  .about-category-feature-title {
+    font-size: 44px;
+  }
+
+  .about-category-feature-text {
+    font-size: 22px;
+  }
+
+  .about-graduation-images {
+    padding-right: 25px;
+  }
+
+  .about-graduation-content-wrapper {
+    padding-left: 25px;
+  }
+}
+
+/* Desktop monitors - 27 inch 4K */
+@media (min-width: 3840px) {
+  .about-slogan-title {
+    font-size: 52px;
+  }
+
+  .about-intro-text {
+    font-size: 24px;
+  }
+
+  .about-feature-number {
+    font-size: 76px;
+  }
+
+  .about-feature-title {
+    font-size: 28px;
+  }
+
+  .about-feature-text {
+    font-size: 22px;
+  }
+
+  .about-quote-text {
+    font-size: 32px;
+  }
+
+  .about-graduation-content-title {
+    font-size: 48px;
+  }
+
+  .about-graduation-content-text {
+    font-size: 22px;
+  }
+
+  .about-how-it-works-title {
+    font-size: 52px;
+  }
+
+  .about-step-title {
+    font-size: 32px;
+  }
+
+  .about-step-text {
+    font-size: 22px;
+  }
+
+  .about-subscribe-title {
+    font-size: 48px;
+  }
+
+  .about-subscribe-text {
+    font-size: 24px;
+  }
+
+  .about-category-feature-title {
+    font-size: 48px;
+  }
+
+  .about-category-feature-text {
+    font-size: 24px;
+  }
+
+  .about-graduation-images {
+    padding-right: 30px;
+  }
+
+  .about-graduation-content-wrapper {
+    padding-left: 30px;
   }
 }
