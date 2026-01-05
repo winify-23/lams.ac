@@ -70,12 +70,26 @@ function adjustFooterPaths(htmlContent, targetDepth) {
 
 // Function chính để load footer
 function loadFooter() {
-    var footerPath = '_components/footer.html';
     var currentDepth = getDirectoryDepth();
+    var footerPath;
     
-    // Điều chỉnh đường dẫn đến footer component
-    for (var i = 0; i < currentDepth; i++) {
-        footerPath = '../' + footerPath;
+    // Tính toán base path từ root (xử lý trường hợp GitHub Pages có subpath)
+    var pathname = window.location.pathname;
+    // Loại bỏ tên file và trailing slash
+    var basePath = pathname.replace(/\/[^\/]*$/, '');
+    if (!basePath) {
+        basePath = '';
+    }
+    
+    if (currentDepth === 0) {
+        // Ở root, sử dụng đường dẫn tuyệt đối từ root để tránh lỗi trên GitHub Pages
+        footerPath = basePath + '/_components/footer.html';
+    } else {
+        // Ở subdirectory, sử dụng đường dẫn tương đối
+        footerPath = '_components/footer.html';
+        for (var i = 0; i < currentDepth; i++) {
+            footerPath = '../' + footerPath;
+        }
     }
     
     fetch(footerPath)
