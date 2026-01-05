@@ -70,11 +70,60 @@ function adjustFooterPaths(htmlContent, targetDepth) {
 
 // Function để lấy base path từ root của site (xử lý GitHub Pages subpath)
 function getBasePath() {
+    // Kiểm tra xem có <base> tag không
+    var baseTag = document.querySelector('base');
+    if (baseTag && baseTag.href) {
+        try {
+            var baseUrl = new URL(baseTag.href, window.location.origin);
+            var basePath = baseUrl.pathname;
+            // Đảm bảo có trailing slash
+            if (!basePath.endsWith('/')) {
+                basePath += '/';
+            }
+            return basePath;
+        } catch (e) {
+            // Nếu parse URL fail, tiếp tục với logic khác
+        }
+    }
+    
+    // Phát hiện base path từ script path (cách đáng tin cậy nhất)
+    var scripts = document.getElementsByTagName('script');
+    for (var i = 0; i < scripts.length; i++) {
+        var scriptSrc = scripts[i].src;
+        if (scriptSrc && scriptSrc.indexOf('footer-loader.js') !== -1) {
+            try {
+                var scriptUrl = new URL(scriptSrc);
+                var scriptPath = scriptUrl.pathname;
+                // Loại bỏ tên file và _resources/js/
+                var basePath = scriptPath.replace(/\/[^\/]*$/, '').replace(/\/_resources\/js$/, '').replace(/\/_resources$/, '');
+                if (!basePath) {
+                    basePath = '/';
+                } else if (!basePath.endsWith('/')) {
+                    basePath += '/';
+                }
+                return basePath;
+            } catch (e) {
+                // Nếu parse URL fail, tiếp tục với logic khác
+            }
+        }
+    }
+    
+    // Fallback: sử dụng pathname
     var pathname = window.location.pathname;
     // Loại bỏ tên file (index.html, etc.) và trailing slash
     var path = pathname.replace(/\/[^\/]*$/, '').replace(/\/$/, '');
-    // Nếu path rỗng, base path là /
-    if (!path) {
+    
+    // Nếu path rỗng (ở root), thử phát hiện từ pathname segments
+    if (!path || path === '/') {
+        // Phân tích pathname để tìm repo name (segment đầu tiên)
+        var segments = pathname.split('/').filter(function(s) { return s.length > 0; });
+        // Nếu có segment đầu tiên và không phải là tên file, đó có thể là repo name
+        if (segments.length > 0 && !segments[0].match(/\.(html|htm)$/i)) {
+            // Kiểm tra xem segment đầu tiên có phải là thư mục thực sự không
+            if (segments.length > 1 || pathname.indexOf('/' + segments[0] + '/') === 0) {
+                return '/' + segments[0] + '/';
+            }
+        }
         return '/';
     }
     // Trả về base path với trailing slash
