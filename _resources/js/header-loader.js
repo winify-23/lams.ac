@@ -67,14 +67,34 @@ function adjustHeaderPaths(htmlContent, targetDepth) {
     return htmlContent;
 }
 
+// Function để lấy base path từ root của site (xử lý GitHub Pages subpath)
+function getBasePath() {
+    var pathname = window.location.pathname;
+    // Loại bỏ tên file (index.html, etc.) và trailing slash
+    var path = pathname.replace(/\/[^\/]*$/, '').replace(/\/$/, '');
+    // Nếu path rỗng, base path là /
+    if (!path) {
+        return '/';
+    }
+    // Trả về base path với trailing slash
+    return path + '/';
+}
+
 // Function chính để load header
 function loadHeader() {
-    var headerPath = './_components/header.html';
     var currentDepth = getDirectoryDepth();
+    var headerPath;
     
-    // Điều chỉnh đường dẫn đến header component
-    for (var i = 0; i < currentDepth; i++) {
-        headerPath = '../' + headerPath;
+    if (currentDepth === 0) {
+        // Ở root, sử dụng đường dẫn tuyệt đối từ base path
+        var basePath = getBasePath();
+        headerPath = basePath + '_components/header.html';
+    } else {
+        // Ở subdirectory, sử dụng đường dẫn tương đối
+        headerPath = './_components/header.html';
+        for (var i = 0; i < currentDepth; i++) {
+            headerPath = '../' + headerPath;
+        }
     }
     
     fetch(headerPath)
